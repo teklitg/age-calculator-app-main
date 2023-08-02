@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: itali;
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: reglar;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+@font-face{
+    font-family: exrabloditali;
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face{
+    font-family: blod;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+@font-face{
+    font-family: bloditalic;
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face{
+    font-family: extrablod;
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+.conainer{
+    margin-inline: auto;
+    width: 50%;
+
+    background-color: white;
+    border-radius: 4% 4% 25%;
+    padding: 4%;
+    position: relative;
+    margin-top: 5vh;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%;
+    font-family: blod;
+}
+
+.form div{
+    color: hsl(0, 1%, 44%);
+}
+
+input{
+    width: 90%;
+    font-size: 1.75em;
+    font-family: extrablod;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 7px;
+    border: 0.25px solid hsl(0, 1%, 44%);
+    outline: none;
+}
+
+input[type=number]:focus {
+    border: 2px solid hsl(259, 100%, 65%);;
+  }
+
+.form .valid {
+    color: hsl(0, 100%, 67%);
+    font-size: small;
+}
+  
+.horizontal{
+    display: flex;
+}
+.horizontal .hr {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 1%, 44%);
+    align-self: center;
+}
+.horizontal button{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+}
+.horizontal button:hover{
+    background-color: black;
+}
+.hid{
+    display: none;
+}
+.answer{
+    display: flex;
+    flex-direction: column;
+    font-family: exrabloditali;
+    font-size: 5vw;
+}
+.answer span{
+    color: hsl(259, 100%, 65%);;
+}
+svg{
+    padding: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+    .conainer{
+        width: 90%;
+    }
+    .hid{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: hsl(0, 1%, 44%);
+    align-self: center;
+    }
+   .horizontal{
+    margin-top: 3vh;
+   }
+   .answer{
+    font-size: 5ch;
+   }
+}
